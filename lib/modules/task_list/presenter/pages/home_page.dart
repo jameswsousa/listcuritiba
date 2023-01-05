@@ -41,12 +41,9 @@ class _HomePageState extends State<HomePage> {
                 });
           }),
       appBar: AppBar(
-        backgroundColor: Colors.teal,
-        title: Text(
-          'Lista de Tarefas',
-          style: h1.copyWith(color: Colors.white),
-        ),
-      ),
+          backgroundColor: Colors.teal,
+          title: Text('Lista de Tarefas',
+              style: h1.copyWith(color: Colors.white))),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: EdgeInsets.all(40),
@@ -60,12 +57,16 @@ class _HomePageState extends State<HomePage> {
                 child: Observer(builder: (context) {
                   if (_controller.tasksList == null)
                     return SingleChildScrollView(
-                      child: Container(
-                        height: 150,
-                        width: 150,
-                        child: CircularProgressIndicator(
-                          color: Colors.teal,
-                        ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Container(
+                            constraints:
+                                BoxConstraints(maxHeight: 100, maxWidth: 100),
+                            child:
+                                CircularProgressIndicator(color: Colors.teal),
+                          ),
+                        ],
                       ),
                     );
                   if (_controller.tasksList!.isEmpty)
