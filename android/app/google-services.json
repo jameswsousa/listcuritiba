@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "881086300585",
+    "project_id": "listcuritiba",
+    "storage_bucket": "listcuritiba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881086300585:android:8b376637b92dc4f186c4b8",
+        "android_client_info": {
+          "package_name": "com.listcuritiba.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881086300585-38qklrisq28fpt0f1gv0li9r93hd1gct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBGkgbM5bSbNeQ33pSRVc8rjefQu02Hr4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "881086300585-38qklrisq28fpt0f1gv0li9r93hd1gct.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
